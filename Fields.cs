@@ -9,6 +9,8 @@ public class Test
       
     public int Count { get; set; }
       
+    public string Info { get; set; }
+      
 }
 
     

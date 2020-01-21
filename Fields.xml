@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <root>
   <fields>
-    
+
     <field>
       <name>Name</name>
       <type>string</type>
@@ -16,6 +16,11 @@
       <name>Count</name>
       <type>int</type>
     </field>
-    
+
+    <field>
+      <name>Info</name>
+      <type>string</type>
+    </field>
+
   </fields>
 </root>

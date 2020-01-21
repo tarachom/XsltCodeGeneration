@@ -21,6 +21,10 @@ namespace XsltCodeGeneration
 			xsltCodeGnerator.Transform(DirectoryParent + "Fields.xml", DirectoryParent + "Fields.cs");
 		}
 
+		/// <summary>
+		/// Повертає шлях до папки з даними
+		/// </summary>
+		/// <returns></returns>
 		static string GetDirectoryParent()
 		{
 			string DirectoryAssembly = Path.GetDirectoryName(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
