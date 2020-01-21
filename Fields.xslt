@@ -7,9 +7,14 @@
  * Автоматично згенерований код
  *
  */
- 
+
+//Клас Test
 public class Test
 {
+    public Test()
+    {
+    
+    }
       <xsl:for-each select="root/fields/field">
     public <xsl:value-of select="type"/><xsl:text> </xsl:text><xsl:value-of select="name"/> { get; set; }
       </xsl:for-each>

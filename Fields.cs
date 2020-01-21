@@ -6,6 +6,10 @@
  
 public class Test
 {
+    public Test()
+    {
+    
+    }
       
     public string Name { get; set; }
       
