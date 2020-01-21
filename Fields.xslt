@@ -3,7 +3,11 @@
   <xsl:output method="text" indent="yes" />
 
     <xsl:template match="/">
-
+/*
+ * Автоматично згенерований код
+ *
+ */
+ 
 public class Test
 {
       <xsl:for-each select="root/fields/field">
