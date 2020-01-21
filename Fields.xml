@@ -5,21 +5,25 @@
     <field>
       <name>Name</name>
       <type>string</type>
+      <comment>Назва поля</comment>
     </field>
 
     <field>
       <name>Desc</name>
       <type>string</type>
+      <comment>Опис поля</comment>
     </field>
 
     <field>
       <name>Count</name>
       <type>int</type>
+      <comment>Кількість</comment>
     </field>
 
     <field>
       <name>Info</name>
       <type>string</type>
+      <comment>Додаткова інформація</comment>
     </field>
 
   </fields>
