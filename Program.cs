@@ -15,10 +15,13 @@ namespace XsltCodeGeneration
 		{
 			string DirectoryParent = GetDirectoryParent();
 
-			XslCompiledTransform xsltCodeGnerator = new XslCompiledTransform();
-			xsltCodeGnerator.Load(DirectoryParent + "Fields.xslt");
+			XslCompiledTransform xsltCodeGenerator = new XslCompiledTransform();
+			xsltCodeGenerator.Load(DirectoryParent + "Fields.xslt");
 
-			xsltCodeGnerator.Transform(DirectoryParent + "Fields.xml", DirectoryParent + "Fields.cs");
+			XsltArgumentList xsltArg = new XsltArgumentList();
+			xsltArg.AddParam("datetime", "", DateTime.Now.ToString("dd.MM.yyyy"));
+
+			xsltCodeGenerator.Transform(DirectoryParent + "Fields.xml", xsltArg, File.OpenWrite(DirectoryParent + "Fields.cs"));
 		}
 
 		/// <summary>

@@ -1,17 +1,14 @@
 ﻿
 /*
- * Автоматично згенерований код
- *
+ * Автоматично згенерований код 
+ * Дата: 21.01.2020
  */
 
 //Клас Test
 //
 public class Test
 {
-    public Test()
-    {
-    
-    }
+    public Test() { }
       
     //Назва поля
     public string Name { get; set; }
@@ -25,6 +22,9 @@ public class Test
     //Додаткова інформація
     public string Info { get; set; }
       
+}
+
+         
 }
 
     
