@@ -21,12 +21,12 @@ namespace XsltCodeGeneration
 			xsltCodeGnerator.Transform(DirectoryParent + "Fields.xml", DirectoryParent + "Fields.cs");
 		}
 
-        static string GetDirectoryParent()
-        {
-            string DirectoryAssembly = Path.GetDirectoryName(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
-            string DirectoryParent = Directory.GetParent(DirectoryAssembly).FullName;
+		static string GetDirectoryParent()
+		{
+			string DirectoryAssembly = Path.GetDirectoryName(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+			string DirectoryParent = Directory.GetParent(DirectoryAssembly).FullName;
 
 			return DirectoryParent + @"\";
 		}
-    }
+	}
 }
