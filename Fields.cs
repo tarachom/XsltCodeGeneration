@@ -5,6 +5,7 @@
  */
 
 //Клас Test
+//
 public class Test
 {
     public Test()
