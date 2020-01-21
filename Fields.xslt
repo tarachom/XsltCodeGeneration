@@ -22,5 +22,4 @@ public class Test
 }
 
     </xsl:template>
-  
 </xsl:stylesheet>

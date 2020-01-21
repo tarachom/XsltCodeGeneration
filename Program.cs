@@ -21,6 +21,9 @@ namespace XsltCodeGeneration
 			XsltArgumentList xsltArg = new XsltArgumentList();
 			xsltArg.AddParam("datetime", "", DateTime.Now.ToString("dd.MM.yyyy"));
 
+			if (File.Exists(DirectoryParent + "Fields.cs"))
+				File.WriteAllText(DirectoryParent + "Fields.cs", String.Empty);
+
 			xsltCodeGenerator.Transform(DirectoryParent + "Fields.xml", xsltArg, File.OpenWrite(DirectoryParent + "Fields.cs"));
 		}
 
