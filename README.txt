@@ -1,4 +1,4 @@
 ﻿
 Приклад генерації коду на C# за допомогою XSLT шаблону та XML даних
 
-http://find.org.ua/2020/01/16/xslt/
+https://find.org.ua/post_25_12_2020.html
